@@ -1,0 +1,14 @@
+1. La presencia o ausencia de una interfaz gráfica influye significativamente en la experiencia del usuario. Con una interfaz gráfica, el usuario podrá ver el espacio de trabajo en el que trabaja (por ejemplo, el escritorio, las carpetas y los iconos de las aplicaciones). También tendrá acceso a aplicaciones diseñadas con una interfaz gráfica, como LibreOffice, VLC y Spotify. Sin una interfaz gráfica, la mayoría de estas funciones no estarán disponibles, pero el usuario podrá acceder al espacio de trabajo a través de una terminal, donde deberá introducir comandos para realizar acciones.
+Es mejor no instalar una interfaz gráfica en el servidor, ya que requiere recursos adicionales, como memoria y potencia de procesamiento. Además, las aplicaciones con interfaz gráfica en el servidor simplemente no se utilizan porque son innecesarias.
+
+2. El modo NAT crea una red local a la que pueden conectarse otras máquinas virtuales del host. El modo puente permite conectar una máquina virtual a la red del host, proporcionando acceso a otros usuarios de esa red e incluso acceso a Internet.
+3. Otorgar privilegios de "root" a un usuario sin experiencia puede causar daños accidentales al sistema. Crear un usuario adicional y restringir sus privilegios ayuda a proteger el sistema de estas situaciones.
+
+4. El comando sudo permite ejecutar otros comandos como administrador. Solo lo usamos cuando es necesario y conscientes de lo que hacemos. Si trabajamos constantemente como root, podríamos modificar accidentalmente un archivo importante del sistema, y ​​el sistema nos lo permitirá gracias a nuestros privilegios.
+
+5. En nuestro caso, la máquina virtual (Debian) es un servidor que, gracias al mod Bridge, es visible para todos los usuarios de la red cliente (Windows). Los clientes pueden ver el servidor en la red y conectarse a él con la contraseña y la dirección IP. Sin embargo, solo los clientes Windows pueden conectarse al servidor Debian, no al revés. Para que un cliente se conecte a Windows, debe estar instalado el servidor OpenSSH.
+
+6. "ipconfig" para Windows y "ip a" para Linux (Debian). 
+
+7. Se rechazaría la conexión.
+sudo systemctl status ssh.
